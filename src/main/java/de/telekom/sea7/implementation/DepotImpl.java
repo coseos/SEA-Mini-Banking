@@ -1,5 +1,7 @@
 package de.telekom.sea7.implementation;
 
+import java.util.Iterator;
+
 import de.telekom.sea7.Depot;
 
 // Depot/DepotImpl: die ArrayList (ähnlich) nachbauen
@@ -18,6 +20,10 @@ public class DepotImpl implements Depot {
 	
 	public int size() {
 		return anzahl;
+	}
+
+	public Iterator iterator() {
+		return new DepotIteratorImpl(this);
 	}
 
 }

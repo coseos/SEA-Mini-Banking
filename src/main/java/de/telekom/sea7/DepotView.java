@@ -1,6 +1,6 @@
 package de.telekom.sea7;
 
-public interface View {
+public interface DepotView {
 
 	void show(Depot depot);
 
